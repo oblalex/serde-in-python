@@ -1,0 +1,14 @@
+schematics
+humanize
+psutil
+bpython
+inflection
+
+pandas
+ujson
+avro-python3
+fastavro
+msgpack-python
+u-msgpack-python
+pycapnp
+protobuf

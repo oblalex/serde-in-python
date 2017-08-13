@@ -1,0 +1,43 @@
+syntax = "proto2";
+
+package serde;
+
+
+message Flight {
+    required string FL_DATE = 1;
+    optional uint32 AIRLINE_ID = 2;
+    optional string CARRIER = 3;
+    optional string TAIL_NUM = 4;
+    optional uint32 FL_NUM = 5;
+    optional uint32 ORIGIN_AIRPORT_ID = 6;
+    optional uint32 ORIGIN_AIRPORT_SEQ_ID = 7;
+    optional uint32 ORIGIN_CITY_MARKET_ID = 8;
+    optional string ORIGIN = 9;
+    optional string ORIGIN_CITY_NAME = 10;
+    optional string ORIGIN_STATE_ABR = 11;
+    optional uint32 ORIGIN_STATE_FIPS = 12;
+    optional string ORIGIN_STATE_NM = 13;
+    optional uint32 ORIGIN_WAC = 14;
+    optional uint32 DEST_AIRPORT_ID = 15;
+    optional uint32 DEST_AIRPORT_SEQ_ID = 16;
+    optional uint32 DEST_CITY_MARKET_ID = 17;
+    optional string DEST = 18;
+    optional string DEST_CITY_NAME = 19;
+    optional string DEST_STATE_ABR = 20;
+    optional uint32 DEST_STATE_FIPS = 21;
+    optional string DEST_STATE_NM = 22;
+    optional uint32 DEST_WAC = 23;
+    optional float DEP_DELAY = 24;
+    optional float TAXI_OUT = 25;
+    optional float WHEELS_OFF = 26;
+    optional float WHEELS_ON = 27;
+    optional float TAXI_IN = 28;
+    optional float ARR_DELAY = 29;
+    optional float AIR_TIME = 30;
+    optional float DISTANCE = 31;
+}
+
+
+message FlightBook {
+  repeated Flight flights = 1;
+}
